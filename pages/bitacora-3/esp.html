@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/c7552d1df0.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Montserrat:wght@700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <main>
+        <header>
+            <a href="../../index.html"><img src="imagenes/LOGO.png" alt="" height="180""  id="logo"></a>
+        </header>
+        <nav>
+            <section class="barra">
+                <a href="../bitacora-3/index.html">Filter</a>
+                <a href="../bitacora-3/tab.html">Table</a>
+                <a href="../bitacora-3/esp.html">Especificidad</a>
+                <a href="../bitacora-3/tip.html">Tipografía</a>
+                <a href="../bitacora-3/colc.html">Colores CSS3 </a>
+                <a href="../bitacora-3/colw.html">Color & Web</a>
+                <a href="../bitacora-3/head.html">Header</a>
+                <a href="../bitacora-3/foot.html">Footer</a>
+            </section>
+            <div class="incon">
+                <i class="fa-solid fa-turn-up fa-flip-both fa-2xl"></i>
+            </div>
+
+        </nav>
+        <!---------------------------------------------------HTML----------------------------------------------------------------------------------------------------------------------------------------------->
+        <section id="cont">
+            <div class="tit-cont">
+                <div class="tit-text">
+                    <h2 class="sub">ESPECIFIDAD</h2>
+                </div>
+            </div>
+            <section class="resumen">
+                <h2 class="sub">IDEAS CLAVE</h2>
+                <div class="Presumen">
+                    <ul>
+                        <li>Jerarquía: <br>
+                            Inline > ID > Class-att-psclass > Elementos
+                        </li>
+                        <br>
+                        <li>
+                            Regla: <br>
+                            Si se escribe 2 veces en la mismo CSS, solo aceptara el cambio mas reciente de entre ellos
+                            2.
+                        </li>
+                        <br>
+                        <li>
+                            Selector Universal: <br>
+                            Si alguna elemento no tiene una referencia en CCS y esta aplicado el *, entonces
+                            estos elementos seran cambios por el selector universal, todos los elementos, ids, classes,
+                            etc,
+                            tienen todos una especifidad de 0, es decir, todos pueden recibir cambios si no tienen una
+                            referencia
+                            ya establecida anteriormente en el CSS.
+                        </li>
+                        <br>
+                        <li>
+                            Limportant: <br>
+                            Permite realizar cambios y anularlos, esto puede ser un poco util para hacer cambios
+                            repentidos o de emergencia.
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="notas">
+                <div class="h2-n">
+                    <h2 class="sub">NOTAS DE LA CLASE</h2>
+                </div>
+                <div class="Pnotas">
+                    <p>
+                        Es el medio por el cual los navegadores deciden que los valores
+                        de propiedad de CSS son los mas relevantes para un elemento, y
+                        por lo tanbto se aplicaran.
+                        <br><br>
+                        - Como se calcula
+                    <ul>
+                        <li>
+                            Solo se aplica cuando el mismo elemento es el objetivo
+                            de varias declaraciones. Segun las reglas de CSS, los
+                            elementos dirigidos directamente siempre tendran la prioridad
+                            sobre las reglas que un elemento hereda de su antepasado.
+                        </li>
+                        <li>
+                            Cuando varias declaraciones tienen la misma especificidad, la ultima declaracion
+                            encontrada en CSS se aplica el elemento.
+                        </li>
+                    </ul>
+                    - Jerarquía
+                    <br>
+                    Cada selector tiene un lugar en la jerarquia de especifidad. Hay cuatro
+                    categorias que definen el nivel de especifidad de un selector:
+                    <ol>
+                        <li>Estilos Inline:
+                            <br>Se adjunta directamente al elemento que se va a diseñar
+                            <br>
+                            < h2 style=" color:white ">
+                        </li>
+                        <br>
+                        <li>ID:
+                            <br>identificador unico para elementos de la pagina
+                            <br> #navbar
+                        </li>
+                        <br>
+                        <li>Class, atributos y PseudoClases: <br>hover,focus, etc.</li>
+                        <br>
+                        <li>Elementos y pseudoelementos
+                            <br> Esto incluye nombres de elementos y pseudo elementos:
+                            <br>h1, nav, section, etc.
+                        </li>
+                    </ol>
+
+                    - Regla
+                    <br>
+                    si la misma regla se escribe dos veces en la hoja de estilo externa, entonces la regla inferior en
+                    la hoja de estilo esta mas cerca del elemento que se va a diseñar y por lo tanto, se aplicara.
+                    <br><br>
+                    - Selector Universal
+                    <br> El selector universal y los valores heredados tienen una especificad de 0 - *, el cuerpo * y
+                    similares tiene una especificad cero. Los valores heredados también tienen una especificad de 0.
+
+                    <br><br>
+                    - Limportant
+                    <ul>
+                        <li>Cuando se usa una regla limportant es una declaración de estilo, esta declaración anula
+                            cualquier otra declaración.</li><br>
+                        <li>Aunque técnicamente limportant no tiene nada que ver con la especifidad, interactua
+                            directamente con ella</li><br>
+                        <li>Sin embargo, usar limportant es una mala practica y debe evitarse porque dificulta la
+                            depuración al romper la cascada natural en sus hojas de estilo</li><br>
+                        <li>Cuando se aplican dos declaraciones en conflicto con la regla limportant al mismo elemento,
+                            se aplicará la declaración con una mayor especifidad.</li><br>
+                    </ul>
+                    </p>
+                </div>
+
+                <div class="imgr">
+                    <div class="img">
+                        <img class="img-n" src="imagenes/dis.jpg" alt="" width="520px">
+                    </div>
+
+                </div>
+            </section>
+        </section>
+
+        <footer>
+            <div class="h2-re">
+                <h2 class="sub">RESUMEN</h2>
+            </div>
+
+
+            <div class="pfoot">
+                <P>
+                    Gracias a la especifidad en CSS nos permite decidir que estilos se aplicaran a un elemento, ya que
+                    por este, realiza una jerarquia de cambios, ya sea estilos en linea, ID, classes, atributo,
+                    pseudoclasses y elementos. <br><br> Con las reglas y el limportant nos permite anular otras, pero esto no se aconseja utilizarse por lo problematico
+                    que puede resultar mas adelante.
+                    <br><br>
+                    En si la especifidad nos permite evitar conflictos y mantener el orden en los estilos de una pagina web.
+                </P>
+            </div>
+        </footer>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/c7552d1df0.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Montserrat:wght@700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <main>
+        <header>
+            <a href="../../index.html"><img src="imagenes/LOGO.png" alt="" height="180""  id="logo"></a>
+        </header>
+        <nav>
+            <section class="barra">
+                <a href="../bitacora-2/index.html">HTML5</a>
+                <a href="../bitacora-2/css3.html">CSS3</a>
+                <a href="../bitacora-2/pos.html">POSITION</a>
+                <a href="../bitacora-2/dis.html">DISPLAYS</a>
+                <a href="../bitacora-2/anim.html">ANIMATION</a>
+                <a href="../bitacora-2/ref.html">REFERENCIA</a>
+                <a href="../bitacora-2/form.html">FORMULARIOS</a>
+            </section>
+            <div class="incon">
+                <i class="fa-solid fa-turn-up fa-flip-both fa-2xl"></i>
+            </div>
+
+        </nav>
+        <!---------------------------------------------------HTML----------------------------------------------------------------------------------------------------------------------------------------------->
+        <section id="cont">
+            <div class="tit-cont">
+                <div class="tit-text">
+                    <h2 class="sub">REFERENCIAS</h2>
+                </div>
+            </div>
+            <section class="resumen">
+                <h2 class="sub">IDEAS CLAVE</h2>
+                <div class="Presumen">
+                    <ul>
+                        <li>NOT() nos permite agregar excepciones a estilos con reglas agregadas a un elemento muy especifico.</li>
+                            <br>
+                        <li>Para referenciar con hijos de los elementos:
+                            <ul>
+                                <br><li>First-child: solo referencia al primer hijo.</li><br>
+                                <li>Last-child: similar pero con el ultimo hijo.</li><br>
+                                <li>Only-child: y este solamente al unico hijo que haya en un elemento.</ul>
+                        </li>
+                            <br>
+                        <li>Utilizando solamente los atributos para referenciar algun elemento, nos permite especificar de manera controlada:
+                            <ul>    <br>
+                                <li>$="mi": referenciar un atributo que comienze con "mi".</li><br>
+                                <li>*="mi": similar pero referencia algo que termine con "mi".</li><br>
+                                <li>^="mi": Aquel que tenga un elemento relacionado a "mi".</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="notas">
+                <div class="h2-n">
+                    <h2 class="sub">NOTAS DE LA CLASE</h2>
+                </div>
+                <div class="Pnotas">
+                    <p>
+                        - Tanto las referencias ID y Class nos permite identificar algun elemento en especico, la
+                        mayoria de las veces se resulta un poco complicado y tambien repetitivo tener que escribir lo
+                        mismo
+                        o crear varias variables para hacer diferentes estilos en css, gracias a una nueva
+                        implementacion de CSS3, se incorporó unas pseudo clases que permiten seleccionar elementos de
+                        manera mas
+                        especifica. <br><br>
+                        - Con las pseudoclasses podemos aprovechar esta organizacion y referenciar un elemento
+                        especifico sin importar cuanto conocemos sobre sus atributos y el valor de los mismos.
+                        <br>
+                        Utilizando la pseucoclase: nth-child() nos permite encontrar un hijo especifico de un elemento
+                    <ul>
+                        <li>
+                            p:nth-child(2) {background-color:#f08b5}
+                        </li>
+                    </ul>
+                    - Tambien existen otras pesuclases relacionados a esto ultimo, como por ejemplo:
+                    <ul>
+                        <li>First-child</li>
+                        <li>Last-child</li>
+                        <li>Only-child</li>
+                    </ul>
+
+                    - Otra referencia util es not() que permite declarar una excepcion, como ejemplo se puede poner que
+                    en un una regla de estilo creada cualquier elemento que contenga not pero los demas no, se aplicara
+                    a todos menos
+                    al que tenga la referencia NOT()
+                    <br><br>
+                    - Tambien gracias a CSS3, se implemento mas maneras hacer referencias, como por ejemplo, referenciar a elementos utilizando atributos de los mismos elementos sin
+                    tener que agregar Clases o ID´s en el documento CSS.
+                    <br> CSS3 permite combinar "=" con otros atributos y valores para hacer una seleccion mas especifica: <br>
+                        <ul><li>P[name $="mi"] {font-size: 20px} <br>(Permite definir un atributo que empieze con "mi")</li><br>
+                        <li>P[name *="mi"] {font-size: 20px}<br>(Este asigna a cualquier elemento que tenga un valor final a "mi")</li><br>
+                        <li>P[name ^="mi"] {font-size: 20px} <br>(Y este asigna todo elemento que tenga un atributo id cuyo valor incluya el texto "mi")</li></ul><br>
+                        
+                        
+
+                    </p>
+                </div>
+
+                <div class="imgr">
+                    <div class="img">
+                        <img class="img-n" src="imagenes/pseuclass.png" alt="" width="600px">
+                    </div>
+
+                </div>
+            </section>
+        </section>
+
+        <footer>
+            <div class="h2-re">
+                <h2 class="sub">RESUMEN</h2>
+            </div>
+
+
+            <div class="pfoot">
+                <P>
+                    Con todas estas nuevas implementaciones de referencias, nos permite de manera muy especifica, como agregar elementos sin tener que agregar mas "Clases" o "ID´s" a
+                    nuestra hoja estilos.
+                    <br><br>
+                    Estos nos puede servir, para crear ciertos elementos vistosos o ejemplos que necesitan algo visual pero sin afectar a otros elementos necesarios.
+                </P>
+            </div>
+        </footer>
+    </main>
+</body>
+
+</html>

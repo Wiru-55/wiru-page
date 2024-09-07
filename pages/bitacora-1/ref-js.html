@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/c7552d1df0.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Montserrat:wght@700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <main>
+        <header>
+            <a href="../../index.html"><img src="imagenes/LOGO.png" alt="" height="180""  id="logo"></a>
+        </header>
+        <nav>
+            <section class="barra">
+                <a href="../bitacora-1/index.html">JS-CB</a>
+                <a href="../bitacora-1/dom.html">DOM</a>
+                <a href="../bitacora-1/ref-js.html">REF-JS</a>
+                <a href="../bitacora-1/clas.html">CLASSLIST</a>
+                <a href="../bitacora-1/events.html">EVENTOS</a>
+                <a href="../bitacora-1/if.html">IF ELSE</a>
+                <a href="../bitacora-1/view.html">VIEWPORT</a>
+                <a href="../bitacora-1/media.html">@MEDIAS</a>
+            </section>
+            <div class="incon">
+                <i class="fa-solid fa-turn-up fa-flip-both fa-2xl"></i>
+            </div>
+
+        </nav>
+        <!---------------------------------------------------HTML----------------------------------------------------------------------------------------------------------------------------------------------->
+        <section id="cont">
+            <div class="tit-cont">
+                <div class="tit-text">
+                    <h2 class="sub">Referencias con JS</h2>
+                </div>
+            </div>
+            <section class="resumen">
+                <h2 class="sub">IDEAS CLAVE</h2>
+                <div class="Presumen">
+                    <ul>
+                        <li>Por ID - permite elegir un elemento especificamente por su ID
+                            GetElementByID()
+                        </li>
+                                            <br>
+                        <li>
+                            Por ClassName - utilizando el getElementByClassName() permite eligir
+                            un elemento esta vez por la clase
+                        </li>
+                                            <br>
+                        <li>
+                            Por Etiqueta - Se referencia mediante alguna etiqueta que ya haya tenido
+                            algun elemento o contenido en HTML
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="notas">
+                <div class="h2-n">
+                    <h2 class="sub">NOTAS DE LA CLASE</h2>
+                </div>
+                <div class="Pnotas">
+                    <p>
+                        Para poder manipular elementos HTML con JavaScript primero se debe referenciar.
+                        <br>
+                        Este se puede hacer de diferentes maneras:
+                            <ul>
+                                <li>Por su ID 
+                                    <ul>
+                                        <li>Utilizando el metodo GetElementByID() se referencia al elemento
+                                            que tenga un ID en especifico.
+                                        </li>
+                                    </ul>
+                                </li>
+                                                    <br>
+                                <li>Por su nombre de clase
+                                    <ul>
+                                        <li>Similar a ID pero referenciando con el nombre de una clase utilizando
+                                            getElementByClassName(), al utilizar devuelve un HTMLCollection (lista de elementos).
+                                        </li>
+                                    </ul>
+                                </li>
+                                                    <br>
+                                <li>Por su nombre de etiqueta
+                                    <ul>
+                                        <li>Utilizando el getElementByTagName() devolviendo una coleccion de todos los elementos
+                                            con etiqueta igual al HTMLCollection.
+                                        </li>
+                                    </ul>
+                                </li>
+                                                    <br>    
+                                <li>Por su selector CSS
+                                    <ul>
+                                        <li>Existen 2 metodos, el primero es querrySelector() que devuelve el primer elemento que
+                                            coincide con un selector CSS. Utilizando un "ID" y si se usa varias veces, devuelve el
+                                            primer elemento coincidente.
+                                        </li>
+                                                    <br>
+                                        <li>Con quierySelectorAll() devuelve todos los elementos del documento que coinciden con
+                                            un selector "ID" especificadom como un objeto Nodelist estatico.
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        
+                    </p>
+                </div>
+
+                <div class="imgr">
+                    <div class="img">
+                        <img class="img-n" src="imagenes/ref-js.png" alt="" width="580px">
+                    </div>
+
+                </div>
+            </section>
+        </section>
+
+        <footer>
+            <div class="h2-re">
+                <h2 class="sub">RESUMEN</h2>
+            </div>
+
+
+            <div class="pfoot">
+                <P>
+                    Gracias a esto, utilizando las referencias con JS nos permite seleccionar algun elemento
+                    o contenido, modificandolo de una manera mucho mas especifica de una manera mas dinamica.
+                </P>
+            </div>
+        </footer>
+    </main>
+</body>
+
+</html>

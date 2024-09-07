@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/c7552d1df0.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Montserrat:wght@700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <main>
+        <header>
+            <a href="../../index.html"><img src="imagenes/LOGO.png" alt="" height="180""  id="logo"></a>
+        </header>
+        <nav>
+            <section class="barra">
+                <a href="../bitacora-2/index.html">HTML5</a>
+                <a href="../bitacora-2/css3.html">CSS3</a>
+                <a href="../bitacora-2/pos.html">POSITION</a>
+                <a href="../bitacora-2/dis.html">DISPLAYS</a>
+                <a href="../bitacora-2/anim.html">ANIMATION</a>
+                <a href="../bitacora-2/ref.html">REFERENCIA</a>
+                <a href="../bitacora-2/form.html">FORMULARIOS</a>
+            </section>
+            <div class="incon">
+                <i class="fa-solid fa-turn-up fa-flip-both fa-2xl"></i>
+            </div>
+
+        </nav>
+        <!---------------------------------------------------HTML----------------------------------------------------------------------------------------------------------------------------------------------->
+        <section id="cont">
+            <div class="tit-cont">
+                <div class="tit-text">
+                    <h2 class="sub">POSITION</h2>
+                </div>
+            </div>
+            <section class="resumen">
+                <h2 class="sub">IDEAS CLAVE</h2>
+                <div class="Presumen">
+                    <ul>
+                        <li>Casi todas las propiedades de posicion se pueden manipular con top-bottom-right/left y
+                            z-index.</li>   <br>
+                        <li>
+                            Position Static: como su nombre indica se mantiene en su posicion como un bloque y se
+                            acomoda dependiendo a la posicion del contenido de la pagina web de manera normal
+                        </li> <br>
+                        <li>
+                            Relative: al ser manipulado tratara de acomodarse al div mas cercano dependiendo si tiene una posicion 
+                            diferente a Static.
+                        </li>
+                        <li>
+                            Absolute: Al mover un elemento con esta propiedad, todos los elementos se solaparan en el espaciado que deje
+                            el elemento movido.
+                        </li>   <br>
+                        <li>
+                            Fixed: No deja espaciado entre los elementos, es decir mueve todo para poscionarlo en un lugar mejor.
+                        </li> <br>
+                        <li>
+                            Sticky: Puedes indicarle de que posicion hasta que otra posicon puede moverse, es decir puedes delimitar un punto del elemento
+                            donde ya no aparezca mas en la pantalla.
+                        </li>
+
+                    </ul>
+                </div>
+            </section>
+            <section class="notas">
+                <div class="h2-n">
+                    <h2 class="sub">NOTAS DE LA CLASE</h2>
+                </div>
+                <div class="Pnotas">
+                    <p>
+                        La propiedad Position permite crear algun tipo de metodo de posicionamiento, teniendo 5 valores
+                        que afectan el posicionamiento de un elemento HTML <br><br>
+                        Cada elemento se posicionan usando propiedades como lo son: top, bottom, left, right y z-index,
+                        pero estas propiedades funcionan de manera diferente
+                        dependiendo del valor de posicionamiento.
+                        <br><br>
+                        Los elementos de position son:
+                    <ul>
+                        <li>Static <br> - Este elemento viene por predefinido en todos elementos HTML, y en cuanto a su
+                            valor
+                            de posicionamiento no se ve afectado por las propiedades de top,bottom,left-right y z-index,
+                            ya que se maneja
+                            mediante el flujo normal de la pagina web.
+                        </li> <br>
+                        <li>Relative <br>- Tanto el posicionamiento relativo
+                            desplaza un elemento respecto de su posicion original establecida mendiante el
+                            posicionamiento normal. </li> <br>
+                        <li>
+                            Absolute <br>- Esta posicion se emplea para establecer de forma exacta la posicion en la que
+                            se muestra la caja
+                            de un elemento. <br> Cuando un elemento se posiciona de forma absoluta, el resto de los
+                            elementos se ven afectados y ocupan el lugar
+                            original del elemento anterior solapandose entre si.
+                        </li> <br>
+                        <li>Fixed <br>- Esta ubicado en relacion con la ventana grafica, lo que signicia que siempre
+                            permanece en el mismo lugar, incluso si la pagina se desplaza.
+                            Tantos las propiedades top-bottom-right/left.. se utilizan para reposicionar un elemento, en
+                            si esta propiedad no deja un espaciado original de un elemento movido.
+                        </li> <br>
+                        <li>
+                            Sticky <br>- Un elemento con posicion Sticky permite posicionarse en funcion a la posicion
+                            del desplazamiento del usuario, alternando entre relativo y fijo, dependiendo
+                            de la posicion de desplazamiento. <br>
+                        </li>
+                    </ul>
+
+                    </p>
+                </div>
+
+                <div class="imgr">
+                    <div class="img">
+                        <img class="img-n" src="imagenes/pos.png" alt="" width="580px">
+                    </div>
+
+                </div>
+            </section>
+        </section>
+
+        <footer>
+            <div class="h2-re">
+                <h2 class="sub">RESUMEN</h2>
+            </div>
+
+
+            <div class="pfoot">
+                <P>
+                    Con estas propiedades, se puden utilizar como para crear imagenes que se mantengan durante la travesia de la pagina web, como poner imagenes o informacion en ciertos lugares que normalmente
+                    no se dejaria poner.
+                </P>
+            </div>
+        </footer>
+    </main>
+</body>
+
+</html>

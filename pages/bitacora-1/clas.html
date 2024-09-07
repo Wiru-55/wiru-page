@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/c7552d1df0.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Montserrat:wght@700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <main>
+        <header>
+            <a href="../../index.html"><img src="imagenes/LOGO.png" alt="" height="180""  id="logo"></a>
+        </header>
+        <nav>
+            <section class="barra">
+                <a href="../bitacora-1/index.html">JS-CB</a>
+                <a href="../bitacora-1/dom.html">DOM</a>
+                <a href="../bitacora-1/ref-js.html">REF-JS</a>
+                <a href="../bitacora-1/clas.html">CLASSLIST</a>
+                <a href="../bitacora-1/events.html">EVENTOS</a>
+                <a href="../bitacora-1/if.html">IF ELSE</a>
+                <a href="../bitacora-1/view.html">VIEWPORT</a>
+                <a href="../bitacora-1/media.html">@MEDIAS</a>
+            </section>
+            <div class="incon">
+                <i class="fa-solid fa-turn-up fa-flip-both fa-2xl"></i>
+            </div>
+
+        </nav>
+        <!---------------------------------------------------HTML----------------------------------------------------------------------------------------------------------------------------------------------->
+        <section id="cont">
+            <div class="tit-cont">
+                <div class="tit-text">
+                    <h2 class="sub">CLASS LIST</h2>
+                </div>
+            </div>
+            <section class="resumen">
+                <h2 class="sub">IDEAS CLAVE</h2>
+                <div class="Presumen">
+                    <ul>
+                                        <br>
+                       <li>
+                            Add permite agregar una nombre de una propiedad. Si ya existe uno,
+                            no se creará.
+                       </li>
+                                        <br>
+                       <li>
+                        Remove como su nombre indica, permte eliminar/borrar uno o mas nombres
+                        de una clase.
+                       </li>
+                                        <br>
+                       <li>
+                        Toggle alterna entre nombres de clase de cada elemento.
+                       </li>
+                                        <br>
+                    </ul>
+                </div>
+            </section>
+            <section class="notas">
+                <div class="h2-n">
+                    <h2 class="sub">NOTAS DE LA CLASE</h2>
+                </div>
+                <div class="Pnotas">
+                    <p>
+                    La propiedad ClassList devuelve los nombres de clase de un elemento.
+                    Esta propiedad es util para agregar, eliminar y alternar clases CSS en un
+                    elemento.
+                    <br><br>
+                    La propiedad classList es de solo lectura, sin embargo, puede modificarla
+                    utilizando los metodos add(), remove() y toggle().
+                    <ul>
+                        <li>classList.add() - es el metodo que agrega uno o mas nombres de clase a un
+                            elemento. Si la clase especificada ya existe, la clase no se agregará.
+                        </li>
+                                                <br>
+                        <li>
+                            classList.remove() - La propiedad classlist mas el metodo remove elimina uno
+                            o mas nombres de clase de un elemento. Eliminar una clase que existe, no arroja
+                            un error.
+                        </li>
+                                                <br>
+                        <li>
+                            classList.toggle() - El metodo alterna entre un nombre de clase para un elemento.
+                            El primer parametro elimina la clase especificada de un elemento y devuelve falso.
+                                <ul>
+                                    <li>Si no existe, se agregará un elemento y valor de retorno es verdadero.</li>
+                                </ul>
+                        </li>
+                    </ul>
+                    </p>
+                </div>
+
+                <div class="imgr">
+                    <div class="img">
+                        <img class="img-n" src="imagenes/classlist.jpg" alt="" width="600px">
+                    </div>
+
+                </div>
+            </section>
+        </section>
+
+        <footer>
+            <div class="h2-re">
+                <h2 class="sub">RESUMEN</h2>
+            </div>
+
+
+            <div class="pfoot">
+                <P>
+                    Esta propiedad ayuda a poder cambiar los estilos de algun elemento de una manera mas rapida,
+                    ya que puedes agregar, quitar o cambiar clases de un CSS para modificar en como se verá
+                    o como se comportará sin realizar tanto codigo.
+                </P>
+            </div>
+        </footer>
+    </main>
+</body>
+
+</html>

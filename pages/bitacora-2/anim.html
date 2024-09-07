@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/c7552d1df0.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Montserrat:wght@700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <main>
+        <header>
+            <a href="../../index.html"><img src="imagenes/LOGO.png" alt="" height="180""  id="logo"></a>
+        </header>
+        <nav>
+            <section class="barra">
+                <a href="../bitacora-2/index.html">HTML5</a>
+                <a href="../bitacora-2/css3.html">CSS3</a>
+                <a href="../bitacora-2/pos.html">POSITION</a>
+                <a href="../bitacora-2/dis.html">DISPLAYS</a>
+                <a href="../bitacora-2/anim.html">ANIMATION</a>
+                <a href="../bitacora-2/ref.html">REFERENCIA</a>
+                <a href="../bitacora-2/form.html">FORMULARIOS</a>
+            </section>
+            <div class="incon">
+                <i class="fa-solid fa-turn-up fa-flip-both fa-2xl"></i>
+            </div>
+
+        </nav>
+        <!---------------------------------------------------HTML----------------------------------------------------------------------------------------------------------------------------------------------->
+        <section id="cont">
+            <div class="tit-cont">
+                <div class="tit-text">
+                    <h2 class="sub">ANIMATION</h2>
+                </div>
+            </div>
+            <section class="resumen">
+                <h2 class="sub">IDEAS CLAVE</h2>
+                <div class="Presumen">
+                    <ul>
+                        <li>SI en Animation-duration no se especifica su propiedad, la animaciom como tal no se podrá
+                            reproducirse, ya que el valor se interpreta como 0 segundos.
+                        </li> <br>
+                        <li>En Animation-timing-function existen varias curvas de velocidad, siendo:
+                            <ul>
+                                <li>Linear: Misma velocidad de inicio al fin.</li>
+                                <li>Ease: Velocidad con un inicio y final lento pero en intermedio rapido.</li>
+                                <li>Ease-In: Incio lento.</li>
+                                <li>Ease-Out: Final lento.</li>
+                                <li>Ease-In-Out: incio y final lento.</li>
+                                <li>Cubic-bezier: permite definir sus propios valores en funcion cubic-bezier.</li>
+                            </ul>
+                        </li><br>
+                        <li>
+                            Existen varias valores o maneras de reproducir una animacion con Animation-Direction:
+                            <ul>
+                                <li>Normal: Se reproduce de manera hacia adelante.</li>
+                                <li>Reverse: Se reproduce de manera invertida.</li>
+                                <li>Alternate: Primero hacia adelante y luego hacia atras.</li>
+                                <li>Alternate-reverse: similar que alternate pero de manera invertida.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="notas">
+                <div class="h2-n">
+                    <h2 class="sub">NOTAS DE LA CLASE</h2>
+                </div>
+                <div class="Pnotas">
+                    <p>
+                        - CSS3 permite animar la mayoria de los elementos HTML sin usar JavaScript.
+                        <br>
+                        Cuando se especifica estilos CSS dentro de la regla de keyframes, la animacion cambiara del
+                        estilo actual al estilo nuevo.
+                        <br><br>
+                        - Para que una animacion funcione se debe vincular la animacion a un elemento Div y asignarle en
+                        CSS estos valores:
+                        <br>
+                        Div { animation-name: animacion-1} y <br>
+                        @keyframes animacion-1{<br>
+                        From {background-color: red} <br>
+                        to {background-color: yellow}
+                        }
+
+                        <br><br> - Existen varias propiedades para manejar la animacion:
+                    <ul>
+                        <li>Animation-duration: que especifica cuando tiempo debe transcurrir una animacion para
+                            completar un ciclo.</li><br>
+                        <li>Animation-timing-function: especificando la velocidad de una animacion con una corvatura.
+                        </li><br>
+                        <li>Animation-direction: que permite especificar si una animacion debe reproducirse de manera
+                            hacia adelante o atras o en ciclo alterno.</li>
+                    </ul>
+                    </p>
+                </div>
+
+                <div class="imgr">
+                    <div class="img"></div>
+                    <div class="anim">
+                        <div class="circle"></div>
+                    </div>
+
+                </div>
+            </section>
+        </section>
+
+        <footer>
+            <div class="h2-re">
+                <h2 class="sub">RESUMEN</h2>
+            </div>
+
+
+            <div class="pfoot">
+                <P>
+                    Con la propiedad de animacion, se puede crear animaciones espectaculares como para atraer o
+                    entretener o representar de manera mas precisa un tema necesario
+                    <br><br>
+                    Con cada propiedad de animation y sus valores nor permite de manera mas simple, crear animaciones sin tener
+                    que recurrir a Javascript, solo teniendo un poco de conocimiendo de CSS3 y una creatividad mas que digna para 
+                    crear maravillas en una pagina Web.
+                </P>
+            </div>
+        </footer>
+    </main>
+</body>
+
+</html>

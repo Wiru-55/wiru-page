@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/c7552d1df0.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Montserrat:wght@700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <main>
+        <header>
+            <a href="../../index.html"><img src="imagenes/LOGO.png" alt="" height="180""  id=" logo"></a>
+        </header>
+        <nav>
+            <section class="barra">
+                <a href="../bitacora-1/index.html">JS-CB</a>
+                <a href="../bitacora-1/dom.html">DOM</a>
+                <a href="../bitacora-1/ref-js.html">REF-JS</a>
+                <a href="../bitacora-1/clas.html">CLASSLIST</a>
+                <a href="../bitacora-1/events.html">EVENTOS</a>
+                <a href="../bitacora-1/if.html">IF ELSE</a>
+                <a href="../bitacora-1/view.html">VIEWPORT</a>
+                <a href="../bitacora-1/media.html">@MEDIAS</a>
+            </section>
+            <div class="incon">
+                <i class="fa-solid fa-turn-up fa-flip-both fa-2xl"></i>
+            </div>
+
+        </nav>
+        <!---------------------------------------------------HTML----------------------------------------------------------------------------------------------------------------------------------------------->
+        <section id="cont">
+            <div class="tit-cont">
+                <div class="tit-text">
+                    <h2 class="sub">EVENTOS</h2>
+                </div>
+            </div>
+            <section class="resumen">
+                <h2 class="sub">IDEAS CLAVE</h2>
+                <div class="Presumen">
+                    <ul>
+                                                    <br>
+                        <li>Los eventos son cuando se interactua de manera simple con los elementos HTML</li>
+                        <ul>
+                            <li>onclick</li>
+                            <li>ondbclick</li>
+                            <li>onmouseover</li>
+                            <li>onmouseout</li>
+                            <li>onload</li>
+                            <li>onkeydown</li>
+                            <li>onscroll</li>
+                        </ul>
+                                                    <br>
+                        <li>Tanto add como remove permite que podamos agregar o quitar eventos que puedan
+                            sernos utiles para tener una pagina mucho mas dinamico.
+                        </li>
+                                                    <br>
+                    </ul>
+                </div>
+            </section>
+            <section class="notas">
+                <div class="h2-n">
+                    <h2 class="sub">NOTAS DE LA CLASE</h2>
+                </div>
+                <div class="Pnotas">
+                    <p>
+                        HTML DOM permite ejecutar codigo cuando se ocurre algun evento.
+                        El navegador genera eventos cuando "suceden cosas a elementos HTML",
+                        ya sean
+                    <ul>
+                        <li>Al hacer clic con el mouse - onclick</li>
+                        <li>Al hacer doble clic con el mouse - ondbclick</li>
+                        <li>Colocar el mouse sobre un elemento - onmouseover</li>
+                        <li>Alejarlo de un elemento - onmouseout</li>
+                        <li>Cuando se carga una pagina web - onload</li>
+                        <li>Presionar una tecla - onkeydown</li>
+                        <li>Con el scroll en la pagina - onscroll</li>
+                    </ul>
+
+                    EventListener <br>
+
+                    <ul>
+                        <li>El metodo para agregar un evento es con - addEventListener() que adjunta un controlador de
+                            evento al elemento especifico.</li>
+                        <li>Con la sintaxis seria: <br> "X Elemento".addEventListener(evento, funcion)</li>
+                        <li>Con document.addEventListener() se usa para adjuntar un controlador de eventos al documento HTML</li>
+                    </ul>
+                    RemoveEventListener <br>
+                    <ul>
+                        <li>Siminar a add solo que con eliminar eventos agregados con el metodo removeEventListener()</li>
+                        <li>Para eliminar controladores de eventos, la funcion especificada con el metodo addEventListener()
+                            debe ser una funcion externa.
+                        </li>
+                    </ul>
+                    </p>
+                </div>
+
+                <div class="imgr">
+                    <div class="img">
+                        <img class="img-n" src="imagenes/events.jpg" alt="" width="520px">
+                    </div>
+
+                </div>
+            </section>
+        </section>
+
+        <footer>
+            <div class="h2-re">
+                <h2 class="sub">RESUMEN</h2>
+            </div>
+
+
+            <div class="pfoot">
+                <P>
+                  Con estos metodos nos da mucho mas facilidad, control y mejor diseño en cuanto a interactividad, dinamismo y
+                  responsivo en la pagina web con el usuario, permitiendo tener un mejor desarrolo a la hora de interactuar con
+                  ella.
+                </P>
+            </div>
+        </footer>
+    </main>
+</body>
+
+</html>

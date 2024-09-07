@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/c7552d1df0.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Montserrat:wght@700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <main>
+        <header>
+            <a href="../../index.html"><img src="imagenes/LOGO.png" alt="" height="180""  id=" logo"></a>
+        </header>
+        <nav>
+            <section class="barra">
+                <a href="../bitacora-2/index.html">HTML5</a>
+                <a href="../bitacora-2/css3.html">CSS3</a>
+                <a href="../bitacora-2/pos.html">POSITION</a>
+                <a href="../bitacora-2/dis.html">DISPLAYS</a>
+                <a href="../bitacora-2/anim.html">ANIMATION</a>
+                <a href="../bitacora-2/ref.html">REFERENCIA</a>
+                <a href="../bitacora-2/form.html">FORMULARIOS</a>
+            </section>
+            <div class="incon">
+                <i class="fa-solid fa-turn-up fa-flip-both fa-2xl"></i>
+            </div>
+
+        </nav>
+        <!---------------------------------------------------HTML----------------------------------------------------------------------------------------------------------------------------------------------->
+        <section id="cont">
+            <div class="tit-cont">
+                <div class="tit-text">
+                    <h2 class="sub">DISPLAYS</h2>
+                </div>
+            </div>
+            <section class="resumen">
+                <h2 class="sub">IDEAS CLAVE</h2>
+                <div class="Presumen">
+                    <ul>
+                        Block
+                        <li>Cualquier elemento lo tiene por predeterminado, siempre ocupara el ancho posible y hara saltos de renglon.</li>
+                        <br>
+                        INLINE
+                        <li>Nunca comenzara en una nueva linea, ocupara el ancho que sea necesario y permite que otros elementos se agreguen a su lado.</li>
+                        <br>
+                        INLINE-BLOCK
+                        <li>Establece un ancho y una altura dependiendo del elemento, tambien permite ajustarlo manualmente, ademas de permitir agregar paddin y margin.</li>
+                        <br>
+                        NONE
+                        <li>Usado en JavaScrip permite ocultar elementos haciendolos que desaparezca su espaciado en la pagina web hasta que sea necesario.</li>
+                        <br>
+                        TABLE
+                        <li>Permite asignar  en "tablas" como las tablas tradicionales pero HTML.</li>
+                    </ul>
+                </div>
+            </section>
+            <section class="notas">
+                <div class="h2-n">
+                    <h2 class="sub">NOTAS DE LA CLASE</h2>
+                </div>
+                <div class="Pnotas">
+                    <p>
+                        - La propiedad display es una de las mas complejas, establece el tipo de la caja que genera cada
+                        elemento. <br><br>
+                        - Cada elemento HTML tiene un valor de visualiacion predeterminado segun el tipo de elemento que
+                        sea. El valor de visualizacion predetermiando para
+                        la mayoria de los elementos es BLOCK o INLINE. <br><br>
+
+                        BLOCK <br>
+                        Un elemento con display block siempre comienza en una linea y ocupa todo el ancho disponible (de
+                        derecha a izquierda tanto lo que sea posible). <br>
+                        Los elementos block hacen un tipo de salto de renglon al agregar otro elemenbto de su tipo.
+                    <ul>
+                        Ejemplos
+                        <li>DIV</li>
+                        <li>P</li>
+                        <li>Header</li>
+                        <li>Section</li>
+                    </ul>
+                    INLINE <br>
+                    Un elemento inline no comienza en una linea y solo ocupa el ancho que sea necesario. Permite agregar
+                    mas elementos a lado de ellas y sin dejar que se pongan debajo de ellas. <br>
+                    <ul>
+                        <li>-"Los valores de ancho y altura no permiten utilizarse en display inline, se deben agregar
+                            un display inline-block o block."</li>
+                    </ul>
+
+                    INLINE-BLOCK <br>
+                    Permite establecer un ancho y una altura en el elemento. Ademas permite los margin y los padding.
+                    <br>No agrega un salto de linea despues del elemento, permitiendo que un elemento nuevo
+                    pueda alinearse junto a otros. <br><br>
+
+                    NONE <br>
+                    Se usa comunmente con JavaScript para ocultar y mostrar elementos cuando el usuario realiza alguna
+                    accion como pulsar un boton o un enlace sin eliminarlo ni crearlos nuevamente. <br>
+                    Lo que hace el elemento no genere una caja. El resultado es que el elemento desaparece por completo
+                    de la pagina y no
+                    ocupa sitio. <br><br>
+
+                    TABLE <br>
+                    Permite asignar un comportamiento de tabla de elementos que haya dentro (andiados a la etiqueta
+                    donde esta colocando el table). <br>
+                        Dentro de un elemento marcado como display table, se pueden usar otra serie de valores de siplay que corresponden con los roles
+                        de distintas etiquetas HTML que se usan en las tablas tradicionales.
+                            <ul>
+                            <li>Display Table-ROW: actua como un elemento en fia, etiqueta "b"</li>
+                            <li>Table-CELL: etiquetas que trabajan como una celda de tabla, etiqueta 
+                                "id"
+                            </li>
+                        </ul>
+                    </p>
+                </div>
+
+                <div class="imgr">
+                    <div class="img">
+                        <img class="img-n" src="imagenes/dis.jpg" alt="" width="520px">
+                    </div>
+
+                </div>
+            </section>
+        </section>
+
+        <footer>
+            <div class="h2-re">
+                <h2 class="sub">RESUMEN</h2>
+            </div>
+
+
+            <div class="pfoot">
+                <P>
+                    Con la propiedad DISPLAY nos permite mucho en poder desarrollar y controlar la manera en que se estructura una pagina, permitiendo unir varios cuadros de texto o acomodando
+                    cuadros de imagen o texto, para un mejor vistazo de la pagina. 
+                    <br><br>
+                    DISPLAY ademas de permitirnos manipular el espaciado entre renglones de un elemento HTML, nos deja organizar de manera mas controlada al punto que es una de las propiedades mas utiles y
+                    versatiles que se crearon para CSS, siendo una pieza fundamental o algo basico para crear paginas de hoy en dia.
+                </P>
+            </div>
+        </footer>
+    </main>
+</body>
+
+</html>
