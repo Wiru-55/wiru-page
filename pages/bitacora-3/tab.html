@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/c7552d1df0.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Montserrat:wght@700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <main>
+        <header>
+            <a href="../../index.html"><img src="imagenes/LOGO.png" alt="" height="180""  id=" logo"></a>
+        </header>
+        <nav>
+            <section class="barra">
+                <a href="../bitacora-3/index.html">FrameWorks</a>
+                <a href="../bitacora-3/tab.html">Unidades Responsivas</a>
+                <a href="../bitacora-3/esp.html">Mobile First</a>
+                <a href="../bitacora-3/tip.html">Modulo Grid</a>
+                <a href="../bitacora-3/colc.html">@supports</a>
+            </section>
+            <div class="incon">
+                <i class="fa-solid fa-turn-up fa-flip-both fa-2xl"></i>
+            </div>
+
+        </nav>
+        <!---------------------------------------------------HTML----------------------------------------------------------------------------------------------------------------------------------------------->
+        <section id="cont">
+            <div class="tit-cont">
+                <div class="tit-text">
+                    <h2 class="sub">Unidades Responsivas</h2>
+                </div>
+            </div>
+            <section class="resumen">
+                <h2 class="sub">IDEAS CLAVE</h2>
+                <div class="Presumen">
+                    <ul>
+                        <li>
+                            Unidades Absolutas <br>
+                            Utiles para diseños precisos de manera milimetrica
+                                (px, cm, in).
+                        </li>
+                                                        <br>
+                        <li>Unidades Relativas <br>
+                            Tienen gran utilidad para realizar diseños con capacidad responsiva,
+                            perfectos para adaptar un diseño a diferentes plataformas de manera automatica
+                            (%, em, rem).
+                        </li>
+                                                        <br>
+                        <li>
+                            Unidades de vista de ventana <br>
+                            Estas permiten una mayor adaptabilidad sobre la orientacion de una pantalla
+                            (Vw-Vh & Vmin-Vmax).
+                        </li>
+                                                        <br>
+                        <li>
+                            Unidades dinamicas de vista de ventana <br>
+                            Ofrecen una mayor precision en el tema del diseño responsivo, ya que estas se basan sobre
+                            cualquier variacion de tamaño de la ventana grafica (Dvh, Svh, Lvh).
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="notas">
+                <div class="h2-n">
+                    <h2 class="sub">NOTAS DE LA CLASE</h2>
+                </div>
+                <div class="Pnotas">
+                    <p>
+                        EL objetivo de estas unidades es que existen varias formas de poder ajustar una pagina web a diferentes pantallas como lo son:
+                        <br><br>
+                        Unidades Absolutas <br>
+                        <ul>
+                            <li>
+                                Los cuales son los px (pixeles), cm (centimetros) e in (pulgadas). Estas representar tamaños fijos y no pueden cambiarse
+                                sin importar el contexto en el que se utilce, proporcionando una medida mucho mas exacta, util para diseños precisos de manera
+                                milimetrica.
+                            </li>
+                        </ul>
+                        Unidades Relativas <br>
+                        <ul>
+                            <li>Las relativas son: % (porcentaje), em & rem, los cuales son flexibles y se pueden adaptar a partir de una funcion de otros elementos. <br>
+                                Son muy utles para crear diseños responsivos, ya que permiten que los elementos cambien segun la respuesta al tamaño de la pantalla.
+                            </li>
+                        </ul>
+                        Unidades de vista de ventana <br>
+                        <ul>
+                            <li>Estas son herramientas que se pueden ajustar de manera dinamica al tamaño de la ventana grafica del navegador, siendo estas unidades:
+                                <ul>
+                                    <li>
+                                        Vw & Vh <br>
+                                        - Vw significa viewport width y este representa un porcentaje del ancho de la ventana <br>
+                                        - Vh lo cual es viewport height y este es el porcentaje de la altura.
+                                    </li>
+                                    <li>
+                                        Vmin & Vmax <br>
+                                        Toman el valor minimo y maximo entre el ancho y altura de la ventana, lo que permite una adaptabilidad aun mayor donde la 
+                                        orientacion de la pantalla pueda variar.
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        Unidades Dinamicas de vista de ventana <br>
+                        <ul>
+                            <li>
+                                Estas unidades ofrecen mayor precision en diseño responsivo, ya que estas toman en cuenta las variaciones del tamaño de la ventana grafica en dispositivo movil.
+                                Siendo estas:
+                                    <ul>
+                                        <li> Dvh <br>
+                                            - Significa dynamic viewport height y este representa el 1% de la altura de la ventana, y se ajusta en tiempo real a los cambios de interaz de usuario.
+                                        </li>
+                                        <li> Svh <br>
+                                            - Significa small viewport y corresponde al 1% de la altura de la ventana grafica mas pequeña que el navegador ha registrado, proporcionando un valor estable que pueda
+                                            evitar cambios bruscos al layout.
+                                        </li>
+                                        <li> Lvh <br>
+                                            - large viewport height, se refiere similar pero contrario al Svh .
+                                        </li>
+                                    </ul>
+                            </li>
+                        </ul>
+                    </p>
+
+                </div>
+
+                <div class="imgr">
+                    <div class="img">
+                        <img class="img-n" src="imagenes/unidades.png" alt="" width="600px">
+                    </div>
+
+                </div>
+            </section>
+        </section>
+
+        <footer>
+            <div class="h2-re">
+                <h2 class="sub">RESUMEN</h2>
+            </div>
+
+
+            <div class="pfoot">
+                <P>
+                    Gracias a estas unidades, se puede diseñar de ciertas maneras ya que cada una se especializa en un trabajo en concreto, ya sea para un trabajo mas preciso o
+                    uno mas adaptado a ser responsivo.
+                </P>
+                <br>
+            </div>
+        </footer>
+    </main>
+</body>
+
+</html>

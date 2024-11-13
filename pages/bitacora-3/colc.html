@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/c7552d1df0.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Montserrat:wght@700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <main>
+        <header>
+            <a href="../../index.html"><img src="imagenes/LOGO.png" alt="" height="180""  id=" logo"></a>
+        </header>
+        <nav>
+            <section class="barra">
+                <a href="../bitacora-3/index.html">FrameWorks</a>
+                <a href="../bitacora-3/tab.html">Unidades Responsivas</a>
+                <a href="../bitacora-3/esp.html">Mobile First</a>
+                <a href="../bitacora-3/tip.html">Modulo Grid</a>
+                <a href="../bitacora-3/colc.html">@supports</a>
+            </section>
+            <div class="incon">
+                <i class="fa-solid fa-turn-up fa-flip-both fa-2xl"></i>
+            </div>
+
+        </nav>
+        <!---------------------------------------------------HTML----------------------------------------------------------------------------------------------------------------------------------------------->
+        <section id="cont">
+            <div class="tit-cont">
+                <div class="tit-text">
+                    <h2 class="sub">@SUPPORTS</h2>
+                </div>
+            </div>
+            <section class="resumen">
+                <h2 class="sub">IDEAS CLAVE</h2>
+                <div class="Presumen">
+                    <ul>
+                        <li>Support tiene como proposito aplicar 
+                            estilos condiciones segun la compatibilidad de los CSS en navegadores.
+                        </li>
+                        <br>
+                        <li>Estregias <br>
+                            <ul>
+                                <li>La mejora progresiva: añade mejoras solamente si el navegador lo soporta.</li> 
+                                <br>
+                                <li>La degradacion elegente: Asegura que las funciones avanzadas se vean bien en navegadores mas antiguos.</li>
+                            </ul>
+                        </li>
+                        <br>
+                        <li>Operadores <br>
+                            <ul>
+                                <li>And significa que ambas condiciones deben ser verdaderas.</li> <br>
+                                <li>Or solamente una condicion debe ser verdadera.</li> <br>
+                                <li>Not la condicion debe ser falsa.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="notas">
+                <div class="h2-n">
+                    <h2 class="sub">NOTAS DE LA CLASE</h2>
+                </div>
+                <div class="Pnotas">
+                    <p>
+                        Mejora progresiva y degradacion elegante <br>
+                    <ul>
+                        <li>
+                            La mejora progresiva es conocida como una estrategia de diseño web, en el que consite en
+                            crear una version basica de la funcionaldiad para todos los navegadores y luego agregar caracteristicas mejoradas para
+                            navegadores que la soporten
+                        </li>
+                        <li>La degradacion elegante se refiere a una estrategia de crear la version mas avanza de una funcionalidad y asegurarse de 
+                            que se degrade de manera aceptable en navegadoresmas antiguos o menos capaces.
+                        </li>
+                    </ul>
+                        @supports <br>
+                        Esta regla permite detectar si el navegador soporta una caracteristica CSS en especifico y poder aplicar estilos condicionales basados en dicha compatibilidad. <br>
+                        Es realmente util para implementar funcionalidades modernas mientras se garantizan que los navegadores que no soporten estas caracteristicas aun presenten un diseño funcional.
+                        <ul>
+                            <li>La estructura basica de @supports es la siguiente: <br>
+                                @supports(propiedad:valor){
+                                    Elemento{
+                                        Propiedad; valor;//estilos que aplican si la caracteristica es soportada
+                                    }
+                                }
+                            </li>
+                             <br>
+                            <li>Condiciones de @supports <br>
+                                La regla @supports puede utilizar los siguientes operadores logicos: <br>
+                                    And - Or - Not. (Estas condiciones se pueden combinar)
+                            </li>
+                            <br>
+                            <li>And <br>
+                                Ambas condiciones deben ser verdaderas @supports (propiedad:valor) and (propiedad:valor)
+                            </li>
+                            <br>
+                            <li>Or <br>
+                                Almenos una de las condiciones debe ser verdadera
+                                @supports (propiedad:valor) or (propiedad:valor)
+                            </li>
+                            <br>
+                            <li>Not <br>
+                                La condicion debe ser falsa
+                                @supports not (propiedad:valor)
+                            </li>
+                        </ul>
+                    </p>
+                </div>
+
+                <div class="imgr">
+                    <div class="img">
+                        <img class="img-n" src="imagenes/support.gif" alt="" width="600px">
+                    </div>
+
+                </div>
+            </section>
+        </section>
+
+        <footer>
+            <div class="h2-re">
+                <h2 class="sub">RESUMEN</h2>
+            </div>
+
+
+            <div class="pfoot">
+                <P>
+                    Gracias a esto, en CSS permite que podamos aplicar estilos segun la compatibilidad de los navegadores, dando una facilidad de mejora progresiva y degradacion elegando para
+                    ofrecer una experiencia de usuario mas consistente en diferentes navegadores usados.
+                </P>
+            </div>
+        </footer>
+    </main>
+</body>
+
+</html>

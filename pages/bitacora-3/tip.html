@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/c7552d1df0.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Montserrat:wght@700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <main>
+        <header>
+            <a href="../../index.html"><img src="imagenes/LOGO.png" alt="" height="180""  id="logo"></a>
+        </header>
+        <nav>
+            <section class="barra">
+                <a href="../bitacora-3/index.html">FrameWorks</a>
+                <a href="../bitacora-3/tab.html">Unidades Responsivas</a>
+                <a href="../bitacora-3/esp.html">Mobile First</a>
+                <a href="../bitacora-3/tip.html">Modulo Grid</a>
+                <a href="../bitacora-3/colc.html">@supports</a>
+            </section>
+            <div class="incon">
+                <i class="fa-solid fa-turn-up fa-flip-both fa-2xl"></i>
+            </div>
+
+        </nav>
+        <!---------------------------------------------------HTML----------------------------------------------------------------------------------------------------------------------------------------------->
+        <section id="cont">
+            <div class="tit-cont">
+                <div class="tit-text">
+                    <h2 class="sub">MODULO GRID</h2>
+                </div>
+            </div>
+            <section class="resumen">
+                <h2 class="sub">IDEAS CLAVE</h2>
+                <div class="Presumen">
+                    <ul>
+                      <li>Grid permite diseñar filas y columnas,
+                        a diferencia de flexbox que es unidireccional.
+                      </li>
+                      <br>
+                      <li>Al definir un contenedor con display:grid, todos los
+                        hijos de este se convertiran en cuadriculas.
+                      </li>
+                      <br>
+                      <li>Gap simplifica el espacio entre filas y columnas.</li>
+                      <br>
+                      <li>Fr asigna fracciones del espacio disponible</li>
+                      <br>
+                      <li>grid-template-areas permite nombrar y organizar areas
+                        especificas dentro del grid para mayor flexibilidad en el diseño.
+                      </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="notas">
+                <div class="h2-n">
+                    <h2 class="sub">NOTAS DE LA CLASE</h2>
+                </div>
+                <div class="Pnotas">
+                    <p>
+                        Comunmente se ha utilizado varias estatregias de CSS para diseñar paginas web. Primero se usaba table, luego fue float-position y display, pero
+                        de todos modos estos metodos omiten funciones importantes como lo es: centrado vertical. <br><br>
+                       CSS Grid Layout
+                       <ul>
+                        <li>
+                            Grid es un sistema de diseño bidimensional basado en cuadriculas que en comparacion con cualquier otro sistema de diseño web del pasado, cambia por
+                            completo la forma en que se dimensiona las interfaces de usuario.
+                        </li>
+                        <li>
+                            Fue creado especificamente para la resolucion de problemas de diseño y que a diferencia de flexbox (el cual es de flujo unidireccional), Grid permite definir un
+                            esquema de cuadricula.
+     
+                        </li>
+                       </ul>
+                       Soporte
+                       <ul>
+                        <li>Apartir del 2017, se empezó a ofrecer soporte nativo sin prefijos para CSS GRID en todos los navegadores:
+                            <ul>
+                                <li>Chrome</li>
+                                <li>Firefox</li>
+                                <li>Safari</li>
+                                <li>Opera</li>
+                                <li>Internet Explorer</li>
+                            </ul>
+                        </li>
+                       </ul>
+
+                       Display: Grid <br>
+                       Para comenzar, se debe definir un elemento contenedor como una cuadricula con la expresion: Display: Grid; <br>
+                       El cual todos los hijos directos del contenedor de la cuadricula se convierten automaticamente en elementos del grid.
+                            <ul>
+                                <li>Grid-column - las lineas verticales son las columnas</li>
+                                <li>Grid-rows - las lineas horizontales son los rows</li>
+                            </ul>
+                        
+                            Propiedades <br>
+                            <ul>
+                                <li>
+                                    Gap <br>
+                                    La propiedad gap permite resumir las propeidades de la columna-gap y row-gap
+                                </li>
+                                <li>
+                                    Fr <br>
+                                    Es una medida de CSS Grid, es la abreviacion de "fraccion" y es utilizada para especificar fracciones del espacio
+                                    disponible entre una cuadricula CSS, util para cuando se requiere el espacio restante despues de colocar elementos
+                                    en la cuadricula.
+                                </li>
+                                <li>
+                                    template-areas <br>
+                                    Permite definir un esquema de cuadricula utilizando nombres de areas personalizadas en lugar de especificar las lineas
+                                    de la cuadricula con grid-template-rows y grid-template-columns.
+                                </li>
+                            </ul>
+                    </p>
+
+                </div>
+
+                <div class="imgr">
+                    <div class="img">
+                        <img class="img-n" src="imagenes/grid.jpg" alt="" width="600px">
+                    </div>
+                    </div>
+
+                </div>
+            </section>
+        </section>
+
+        <footer>
+            <div class="h2-re">
+                <h2 class="sub">RESUMEN</h2>
+            </div>
+            <div class="pfoot">
+                <P>
+                    Gracias a este modulo, nos permite organizar de una manera precisa y adaptable en forma bidimensional en los elemtnos en una pagina web.
+                    Ya que fue diseñado especificamente para la resolucion de desafios de diseño, dando como resultado una facildiad de creaciones de de estructuras complejas
+                    y responsivas.
+
+                </P>
+            </div>
+        </footer>
+    </main>
+</body>
+
+</html>
